@@ -23,7 +23,7 @@ namespace ChinookConsoleApp
 
                     var rowsAffected = connection.Execute("Insert into Employee(FirstName, LastName) " +
                                                           "Values(@FirstName, @LastName)",
-                        new {FirstName = x, LastName = y});
+                        new { FirstName = x, LastName = y });
 
                     Console.WriteLine(rowsAffected != 1 ? "Add Failed" : "Success!");
                 }
